@@ -1,11 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 function App() {
+  //con usestate qui salvo le informazioni sugli attori
+  const[Cast, setCast]=useState([]);
   useEffect(() => {
     axios.get("https://lanciweb.github.io/demo/api/actresses/")
       .then(res => {
         console.log("Dati ricevuti:", res.data);
+        //salvo i dati nello state
+        setCast(res.data);
       });
   }, []);
 
