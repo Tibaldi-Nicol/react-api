@@ -2,13 +2,21 @@
 
 function ActorCard({name, birthyear, nationality, image, bio, awards}){
     return(
-    <div className="Actor-Card">
+        
+    <div className=" ">
+
+        <div className="Actor-Card">
 
         <img src={image} alt={name} />
         <p><strong>Nato nel:</strong>{birthyear}</p>
         <p><strong>Nazionalità:</strong> {nationality}</p>
         <p><strong>Biografia:</strong> {bio}</p>
         <p><strong>Premi:</strong> {awards}</p>
+
+        
+
+
+        </div>
 
 
 

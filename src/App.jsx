@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 // Importiamo il file CSS per lo stile
-import './App.css';
+import '/home/nicol/react-api/src/App.css';
 
 // Importiamo il componente ActorCard che useremo per visualizzare le informazioni sugli attori
 import ActorCard from "./ActorCard";
